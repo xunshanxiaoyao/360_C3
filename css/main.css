@@ -1,0 +1,44 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.section {
+	position: relative;
+	overflow: hidden;
+}
+
+/* 第一屏 */
+.first {
+	padding-top: 80px;
+}
+
+.first .logo {
+	width: 251px;
+	height: 186px;
+	margin: 0 auto;
+	background-image: url(../images/logo.png);
+}
+
+.first .text {
+	text-align: center;
+	line-height: 1;
+	margin: 85px 0 45px;
+}
+
+.first img {
+	margin: 0 24px;
+	opacity: 0;
+}
+
+.first .info {
+	height: 49px;
+	backtground: url(../images/info_1.png) center center no-repeat;
+}
+
+/* 第一屏动画 */
+.first.current img {
+	margin: 0;
+	opacity: 1;
+	transition: all 1s ease-out 0.3s;
+}
